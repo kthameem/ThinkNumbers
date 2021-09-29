@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-ThinkNumbers_Test_Automation_Suite" class="navigator-link">
+              <span class="suite-name border-failed">ThinkNumbers Test Automation Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-ThinkNumbers_Test_Automation_Suite" class="navigator-link ">
+                    <span>C:\Users\ahmed\eclipse-workspace\ThinkNumbersTest\src\main\resources\testng_SmokeTesting.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-ThinkNumbers_Test_Automation_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-ThinkNumbers_Test_Automation_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-ThinkNumbers_Test_Automation_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-ThinkNumbers_Test_Automation_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-ThinkNumbers_Test_Automation_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-ThinkNumbers_Test_Automation_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-ThinkNumbers_Test_Automation_Suite" class="hide-methods failed suite-ThinkNumbers_Test_Automation_Suite"> (hide)</a> <!-- hide-methods failed suite-ThinkNumbers_Test_Automation_Suite -->
+                      <a href="#" panel-name="suite-ThinkNumbers_Test_Automation_Suite" class="show-methods failed suite-ThinkNumbers_Test_Automation_Suite"> (show)</a> <!-- show-methods failed suite-ThinkNumbers_Test_Automation_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-ThinkNumbers_Test_Automation_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ThinkNumbers_Test_Automation_Suite" title="com.thinknumbers.smoketesting.ThinkNumbersSmokeTest" class="method navigator-link" hash-for-method="dayBookTest">dayBookTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-ThinkNumbers_Test_Automation_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-ThinkNumbers_Test_Automation_Suite" class="hide-methods passed suite-ThinkNumbers_Test_Automation_Suite"> (hide)</a> <!-- hide-methods passed suite-ThinkNumbers_Test_Automation_Suite -->
+                      <a href="#" panel-name="suite-ThinkNumbers_Test_Automation_Suite" class="show-methods passed suite-ThinkNumbers_Test_Automation_Suite"> (show)</a> <!-- show-methods passed suite-ThinkNumbers_Test_Automation_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-ThinkNumbers_Test_Automation_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ThinkNumbers_Test_Automation_Suite" title="com.thinknumbers.smoketesting.ThinkNumbersSmokeTest" class="method navigator-link" hash-for-method="accountingGroupTest">accountingGroupTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ThinkNumbers_Test_Automation_Suite" title="com.thinknumbers.smoketesting.ThinkNumbersSmokeTest" class="method navigator-link" hash-for-method="analysisGroupTest">analysisGroupTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ThinkNumbers_Test_Automation_Suite" title="com.thinknumbers.smoketesting.ThinkNumbersSmokeTest" class="method navigator-link" hash-for-method="companyTest">companyTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ThinkNumbers_Test_Automation_Suite" title="com.thinknumbers.smoketesting.ThinkNumbersSmokeTest" class="method navigator-link" hash-for-method="fasTrailBalanceTest">fasTrailBalanceTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ThinkNumbers_Test_Automation_Suite" title="com.thinknumbers.smoketesting.ThinkNumbersSmokeTest" class="method navigator-link" hash-for-method="reportingLedgerTest">reportingLedgerTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ThinkNumbers_Test_Automation_Suite" title="com.thinknumbers.smoketesting.ThinkNumbersSmokeTest" class="method navigator-link" hash-for-method="subMasterTest">subMasterTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ThinkNumbers_Test_Automation_Suite" title="com.thinknumbers.smoketesting.ThinkNumbersSmokeTest" class="method navigator-link" hash-for-method="trailBalanceTest">trailBalanceTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-ThinkNumbers_Test_Automation_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-ThinkNumbers_Test_Automation_Suite" class="panel ThinkNumbers_Test_Automation_Suite">
+          <div class="suite-ThinkNumbers_Test_Automation_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.thinknumbers.smoketesting.ThinkNumbersSmokeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="dayBookTest">
+                  </a> <!-- dayBookTest -->
+                  <span class="method-name">dayBookTest</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a _ngcontent-wmg-c27=&quot;&quot; class=&quot;mat-tab-link ng-star-inserted&quot; mat-tab-link=&quot;&quot; routerlinkactive=&quot;&quot; ng-reflect-active=&quot;false&quot; ng-reflect-router-link=&quot;un-freeze-list&quot; ng-reflect-router-link-active=&quot;&quot; aria-disabled=&quot;false&quot; tabindex=&quot;0&quot; href=&quot;#/thinknumbers/masters/day-books/un-freeze-list&quot;&gt;...&lt;/a&gt; is not clickable at point (670, 113). Other element would receive the click: &lt;div class=&quot;cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=94.0.4606.61)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-65CEBPK8&apos;, ip: &apos;10.81.233.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.61, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\ahmed\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53016}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 332399c62c427e1c3b0a48fb1ef6c83c
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at jdk.proxy2/jdk.proxy2.$Proxy11.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at com.thinknumbers.smoketesting.ThinkNumbersSmokeTest.dayBookTest(ThinkNumbersSmokeTest.java:137)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ThinkNumbers_Test_Automation_Suite-class-failed -->
+          <div class="suite-ThinkNumbers_Test_Automation_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.thinknumbers.smoketesting.ThinkNumbersSmokeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="accountingGroupTest">
+                  </a> <!-- accountingGroupTest -->
+                  <span class="method-name">accountingGroupTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="analysisGroupTest">
+                  </a> <!-- analysisGroupTest -->
+                  <span class="method-name">analysisGroupTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="companyTest">
+                  </a> <!-- companyTest -->
+                  <span class="method-name">companyTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="fasTrailBalanceTest">
+                  </a> <!-- fasTrailBalanceTest -->
+                  <span class="method-name">fasTrailBalanceTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reportingLedgerTest">
+                  </a> <!-- reportingLedgerTest -->
+                  <span class="method-name">reportingLedgerTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="subMasterTest">
+                  </a> <!-- subMasterTest -->
+                  <span class="method-name">subMasterTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="trailBalanceTest">
+                  </a> <!-- trailBalanceTest -->
+                  <span class="method-name">trailBalanceTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ThinkNumbers_Test_Automation_Suite-class-passed -->
+        </div> <!-- panel ThinkNumbers_Test_Automation_Suite -->
+        <div panel-name="test-xml-ThinkNumbers_Test_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\ahmed\eclipse-workspace\ThinkNumbersTest\src\main\resources\testng_SmokeTesting.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;ThinkNumbers Test Automation Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.thinknumbers.ExtendReportListener.ExtentReporterNG&quot;/&gt;
+    &lt;listener class-name=&quot;com.thinknumbers.util.ListenerTest&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Think Numbers Smoke Test Cases&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.thinknumbers.smoketesting.ThinkNumbersSmokeTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Think Numbers Smoke Test Cases --&gt;
+&lt;/suite&gt; &lt;!-- ThinkNumbers Test Automation Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-ThinkNumbers_Test_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for ThinkNumbers Test Automation Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Think Numbers Smoke Test Cases (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-ThinkNumbers_Test_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for ThinkNumbers Test Automation Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-ThinkNumbers_Test_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for ThinkNumbers Test Automation Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_ThinkNumbers_Test_Automation_Suite');
+function tableData_ThinkNumbers_Test_Automation_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(8);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'dayBookTest')
+data.setCell(0, 2, 'com.thinknumbers.smoketesting.ThinkNumbersSmokeTest')
+data.setCell(0, 3, 1411);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'subMasterTest')
+data.setCell(1, 2, 'com.thinknumbers.smoketesting.ThinkNumbersSmokeTest')
+data.setCell(1, 3, 1290);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'trailBalanceTest')
+data.setCell(2, 2, 'com.thinknumbers.smoketesting.ThinkNumbersSmokeTest')
+data.setCell(2, 3, 434);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'reportingLedgerTest')
+data.setCell(3, 2, 'com.thinknumbers.smoketesting.ThinkNumbersSmokeTest')
+data.setCell(3, 3, 400);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'fasTrailBalanceTest')
+data.setCell(4, 2, 'com.thinknumbers.smoketesting.ThinkNumbersSmokeTest')
+data.setCell(4, 3, 383);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'companyTest')
+data.setCell(5, 2, 'com.thinknumbers.smoketesting.ThinkNumbersSmokeTest')
+data.setCell(5, 3, 253);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'accountingGroupTest')
+data.setCell(6, 2, 'com.thinknumbers.smoketesting.ThinkNumbersSmokeTest')
+data.setCell(6, 3, 195);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'analysisGroupTest')
+data.setCell(7, 2, 'com.thinknumbers.smoketesting.ThinkNumbersSmokeTest')
+data.setCell(7, 3, 150);
+window.suiteTableData['ThinkNumbers_Test_Automation_Suite']= { tableData: data, tableDiv: 'times-div-ThinkNumbers_Test_Automation_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <div id="times-div-ThinkNumbers_Test_Automation_Suite">
+              </div> <!-- times-div-ThinkNumbers_Test_Automation_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-ThinkNumbers_Test_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for ThinkNumbers Test Automation Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-ThinkNumbers_Test_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-ThinkNumbers_Test_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.thinknumbers.smoketesting.ThinkNumbersSmokeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">companyTest</span>
+                <span class="method-start">26271 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logOutChildWindow</span>
+                <span class="method-start">26531 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">26719 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">subMasterTest</span>
+                <span class="method-start">43447 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logOutChildWindow</span>
+                <span class="method-start">44739 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">44891 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">analysisGroupTest</span>
+                <span class="method-start">60763 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logOutChildWindow</span>
+                <span class="method-start">60914 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">61062 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">accountingGroupTest</span>
+                <span class="method-start">80102 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logOutChildWindow</span>
+                <span class="method-start">80298 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">80469 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">dayBookTest</span>
+                <span class="method-start">98179 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logOutChildWindow</span>
+                <span class="method-start">99837 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">99993 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">trailBalanceTest</span>
+                <span class="method-start">117458 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logOutChildWindow</span>
+                <span class="method-start">117893 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">118047 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">fasTrailBalanceTest</span>
+                <span class="method-start">141881 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logOutChildWindow</span>
+                <span class="method-start">142267 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">142400 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">reportingLedgerTest</span>
+                <span class="method-start">159178 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logOutChildWindow</span>
+                <span class="method-start">159579 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

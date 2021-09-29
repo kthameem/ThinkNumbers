@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">ThinkNumbers Test Automation Suite</th></tr>
+<tr><td><a href="#t0">Think Numbers Smoke Test Cases</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">159,768</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">ThinkNumbers Test Automation Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Think Numbers Smoke Test Cases &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.thinknumbers.smoketesting.ThinkNumbersSmokeTest</td><td><a href="#m0">dayBookTest</a></td><td rowspan="1">1632893495545</td><td rowspan="1">1411</td></tr><tr><th colspan="4">Think Numbers Smoke Test Cases &#8212; passed</th></tr><tr class="passedeven"><td rowspan="7">com.thinknumbers.smoketesting.ThinkNumbersSmokeTest</td><td><a href="#m1">accountingGroupTest</a></td><td rowspan="1">1632893477468</td><td rowspan="1">195</td></tr><tr class="passedeven"><td><a href="#m2">analysisGroupTest</a></td><td rowspan="1">1632893458129</td><td rowspan="1">150</td></tr><tr class="passedeven"><td><a href="#m3">companyTest</a></td><td rowspan="1">1632893423637</td><td rowspan="1">253</td></tr><tr class="passedeven"><td><a href="#m4">fasTrailBalanceTest</a></td><td rowspan="1">1632893539247</td><td rowspan="1">383</td></tr><tr class="passedeven"><td><a href="#m5">reportingLedgerTest</a></td><td rowspan="1">1632893556544</td><td rowspan="1">400</td></tr><tr class="passedeven"><td><a href="#m6">subMasterTest</a></td><td rowspan="1">1632893440813</td><td rowspan="1">1290</td></tr><tr class="passedeven"><td><a href="#m7">trailBalanceTest</a></td><td rowspan="1">1632893514824</td><td rowspan="1">434</td></tr></tbody>
+</table>
+<h2>Think Numbers Smoke Test Cases</h2><h3 id="m0">com.thinknumbers.smoketesting.ThinkNumbersSmokeTest#dayBookTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a _ngcontent-wmg-c27=&quot;&quot; class=&quot;mat-tab-link ng-star-inserted&quot; mat-tab-link=&quot;&quot; routerlinkactive=&quot;&quot; ng-reflect-active=&quot;false&quot; ng-reflect-router-link=&quot;un-freeze-list&quot; ng-reflect-router-link-active=&quot;&quot; aria-disabled=&quot;false&quot; tabindex=&quot;0&quot; href=&quot;#/thinknumbers/masters/day-books/un-freeze-list&quot;&gt;...&lt;/a&gt; is not clickable at point (670, 113). Other element would receive the click: &lt;div class=&quot;cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=94.0.4606.61)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-65CEBPK8&apos;, ip: &apos;10.81.233.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.61, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\ahmed\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53016}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 332399c62c427e1c3b0a48fb1ef6c83c
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at jdk.proxy2/jdk.proxy2.$Proxy11.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at com.thinknumbers.smoketesting.ThinkNumbersSmokeTest.dayBookTest(ThinkNumbersSmokeTest.java:137)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.thinknumbers.smoketesting.ThinkNumbersSmokeTest#accountingGroupTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.thinknumbers.smoketesting.ThinkNumbersSmokeTest#analysisGroupTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.thinknumbers.smoketesting.ThinkNumbersSmokeTest#companyTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.thinknumbers.smoketesting.ThinkNumbersSmokeTest#fasTrailBalanceTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.thinknumbers.smoketesting.ThinkNumbersSmokeTest#reportingLedgerTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.thinknumbers.smoketesting.ThinkNumbersSmokeTest#subMasterTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.thinknumbers.smoketesting.ThinkNumbersSmokeTest#trailBalanceTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

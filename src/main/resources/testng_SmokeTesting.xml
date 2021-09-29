@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="ThinkNumbers Test Automation Suite">
+    
+    <listeners>
+        <listener class-name="com.thinknumbers.ExtendReportListener.ExtentReporterNG" />
+        <listener class-name="com.thinknumbers.util.ListenerTest" />
+    </listeners>
+    
+    
+    <test name="Think Numbers Smoke Test Cases">
+        
+        <classes>
+        	<class name="com.thinknumbers.smoketesting.ThinkNumbersSmokeTest" />
+        </classes>
+        
+    </test>
+
+</suite>
