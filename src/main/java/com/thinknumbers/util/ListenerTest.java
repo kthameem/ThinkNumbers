@@ -4,9 +4,9 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-import com.thinknumbers.base.TestBase;
+import com.thinknumbers.base.BaseTest;
 
-public class ListenerTest extends TestBase implements ITestListener {
+public class ListenerTest extends BaseTest implements ITestListener {
 
 	String testResult;
 	

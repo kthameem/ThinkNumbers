@@ -3,12 +3,12 @@ package com.thinknumbers.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import com.thinknumbers.base.TestBase;
+import com.thinknumbers.base.BaseTest;
 import com.thinknumbers.util.TestUtil;
 
-public class ThinkiamHomePage extends TestBase{
+public class ThinkiamHomePage extends BaseTest{
 	
-	@FindBy(xpath="//a[text()='ThinkNumbers']")
+	@FindBy(xpath="//a[contains(text(),'thinknumbers')]")
 	WebElement thinkNumbersTitle;
 	
 	@FindBy(xpath="//a[@href='#/settings/users/change-password']//parent::li//following-sibling::li//img")

@@ -4,11 +4,11 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.thinknumbers.base.TestBase;
+import com.thinknumbers.base.BaseTest;
 import com.thinknumbers.pages.LoginPage;
 import com.thinknumbers.pages.ThinkiamHomePage;
 
-public class LoginPageTest extends TestBase{
+public class LoginPageTest extends BaseTest{
 	
 	LoginPage loginPage;
 	ThinkiamHomePage thinkiamHomePage;
@@ -23,7 +23,7 @@ public class LoginPageTest extends TestBase{
 		loginPage = new LoginPage();
 	}
 	
-	@Test
+	@Test(priority=1, enabled=true)
 	public void loginTest() {
 		thinkiamHomePage = loginPage.login(prop.getProperty("client"), prop.getProperty("username"), prop.getProperty("password"));
 	}

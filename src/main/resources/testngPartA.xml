@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="ThinkNumbers Test Automation Suite">
+    
+    <listeners>
+        <listener class-name="com.thinknumbers.ExtendReportListener.ExtentReporterNG" />
+        <listener class-name="com.thinknumbers.util.ListenerTest" />
+    </listeners>
+    
+    
+    <test name="Think Numbers Test Cases">
+        
+        <classes>
+        	<class name="com.thinknumbers.testcases.LoginPageTest"/>
+			<class name="com.thinknumbers.testcases.ThinkiamHomePageTest"/>
+			<class name="com.thinknumbers.testcases.HomePageTest"/>
+			<class name="com.thinknumbers.testcases.MasterPageTest"/>
+			<class name="com.thinknumbers.testcases.CompanyCurrencyPageTest"/>
+			<class name="com.thinknumbers.testcases.CompanyEntityDetailsPageTest"/>
+			<class name="com.thinknumbers.testcases.CompanyExchangeRatePageTest"/>
+			<class name="com.thinknumbers.testcases.FasMastersLedgerListPageTest"/>
+			<class name="com.thinknumbers.testcases.FasMastersFasGroupListPageTest"/>
+			<class name="com.thinknumbers.testcases.FasMastersMapWithLedgerPageTest"/>
+			<class name="com.thinknumbers.testcases.OMLedgerTypePageTest"/>
+			<class name="com.thinknumbers.testcases.OMOperatingMetricsPageTest"/>
+			<class name="com.thinknumbers.testcases.OMOperatingMetricsGroupPageTest"/>
+			<class name="com.thinknumbers.testcases.UploadsTBPageTest"/>
+			<class name="com.thinknumbers.testcases.UploadsDBUploadPageTest"/>
+			<class name="com.thinknumbers.testcases.UploadsTrialComputationPageTest"/>
+			<class name="com.thinknumbers.testcases.UploadsFasTBUploadPageTest"/>
+			<class name="com.thinknumbers.testcases.UploadsFasTBValidatePageTest"/>
+			<class name="com.thinknumbers.testcases.UploadsBudgetDataPageTest"/>
+			<class name="com.thinknumbers.testcases.UploadListTBListPageTest"/>
+			<class name="com.thinknumbers.testcases.UploadListDBListPageTest"/>
+			<class name="com.thinknumbers.testcases.UploadListUnfreezeListPageTest"/>
+			<class name="com.thinknumbers.testcases.UploadListFasTBListPageTest"/>
+			<class name="com.thinknumbers.testcases.RLReportingLedgerListsPageTest"/>
+			<class name="com.thinknumbers.testcases.RLReportingLedgersToAccLedgersMappingPageTest"/>
+			<class name="com.thinknumbers.testcases.ReportDesignReportSectionPageTest"/>
+			<class name="com.thinknumbers.testcases.ReportDesignReportTemplatePageTest"/>
+			<class name="com.thinknumbers.testcases.DashboardDesignKeyNumbersPageTest"/>
+			<class name="com.thinknumbers.testcases.DashboardDesignChartsPageTest"/>
+			<class name="com.thinknumbers.testcases.DashboardDesignTablesPageTest"/>
+			<class name="com.thinknumbers.testcases.DashboardDesignDashboardCreationPageTest"/>
+			<class name="com.thinknumbers.testcases.ReportRunDBRLMapPageTest"/>
+			<class name="com.thinknumbers.testcases.ReportRunReportCalculationPageTest"/>
+			<class name="com.thinknumbers.testcases.ReportRunReportCalculatedPageTest"/>
+			<class name="com.thinknumbers.testcases.ReportRunALReportCalculationPageTest"/>
+			<class name="com.thinknumbers.testcases.ReportRunPublishReportPageTest"/>        	
+        </classes>
+        
+    </test>
+
+</suite>

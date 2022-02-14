@@ -10,15 +10,15 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import com.thinknumbers.base.TestBase;
+import com.thinknumbers.base.BaseTest;
 import com.thinknumbers.util.TestUtil;
 
-public class ThinkNumbersSmokeTest extends TestBase{
+public class ThinkNumbersSmokeTest extends BaseTest{
 	WebDriverWait wait;
 	SoftAssert softAssert; 
 
 	@BeforeMethod
-	public void setUp() {
+	public void setUp() throws InterruptedException {
 		initialization();
 		
 		driver.findElement(By.name("clientname")).sendKeys(prop.getProperty("client"));
@@ -27,17 +27,19 @@ public class ThinkNumbersSmokeTest extends TestBase{
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
 		
 		wait = new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[contains(text(),'ThinkNumbers')]"))); 
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[contains(text(),'thinknumbers')]"))); 
 	
-		driver.findElement(By.xpath("//a[contains(text(),'ThinkNumbers')]")).click();
+		driver.findElement(By.xpath("//a[contains(text(),'thinknumbers')]")).click();
 		
 		TestUtil.SwitchToChildWindow();
 		
-		TestUtil.WaitTill_PageLoads(10);
+		TestUtil.WaitTill_PageLoads(20);
 		
-		driver.findElement(By.xpath("//img[@title='Masters']")).click();
+		Thread.sleep(2000);
+		
+		driver.findElement(By.xpath("//img[@title='Master']")).click();
 
-		TestUtil.WaitTill_PageLoads(10);
+		TestUtil.WaitTill_PageLoads(20);
 		
 		softAssert = new SoftAssert();
 		
@@ -45,17 +47,18 @@ public class ThinkNumbersSmokeTest extends TestBase{
 
 	@Test(priority=1)
 	public void companyTest() throws InterruptedException {
-		//wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@href='#/thinknumbers/masters/company' and text()='Company']"))); 
+		WebElement companyLink = driver.findElement(By.xpath("//a[@href='#/thinknumbers/master/company' and text()='Company']"));
+		companyLink.click();
+		TestUtil.WaitTill_PageLoads(10);
 		
-		WebElement companyLink = driver.findElement(By.xpath("//a[@href='#/thinknumbers/masters/company' and text()='Company']"));
+		WebElement currency = driver.findElement(By.xpath("//a[text()='Currency']"));
 		WebElement groupEntityDetails = driver.findElement(By.xpath("//a[text()='Group Entity Details']"));
-		WebElement credential = driver.findElement(By.xpath("//a[text()='Credential']"));
+		WebElement exchangeRate = driver.findElement(By.xpath("//a[text()='Exchange Rate']"));
 		
 		Assert.assertEquals(true, companyLink.isDisplayed(), "Company Link not found in Masters");
+		softAssert.assertEquals(true, currency.isDisplayed(), "Currency Link not found in Company Tab");
 		softAssert.assertEquals(true, groupEntityDetails.isDisplayed(), "Group Entity Details Link not found in Company Tab");
-		softAssert.assertEquals(true, credential.isDisplayed(), "Credential Link not found in Company Tab");
-		
-		credential.click();
+		softAssert.assertEquals(true, exchangeRate.isDisplayed(), "Exchange Rate Link not found in Company Tab");
 		
 		softAssert.assertAll();
 	}
@@ -126,10 +129,10 @@ public class ThinkNumbersSmokeTest extends TestBase{
 		
 		softAssert.assertEquals(true, dayBook.isDisplayed());
 		softAssert.assertEquals(true, dayBookUpload.isDisplayed());
-		softAssert.assertEquals(true, ExpectedConditions.elementToBeClickable(dayBookList));
-		softAssert.assertEquals(true, ExpectedConditions.elementToBeClickable(UnfreezeList));
-		softAssert.assertEquals(true, ExpectedConditions.elementToBeClickable(dayBookRLMap));
-		softAssert.assertEquals(true, ExpectedConditions.elementToBeClickable(dayBookRLMapLists));
+		softAssert.assertEquals(true, dayBookList.isDisplayed());
+		softAssert.assertEquals(true, UnfreezeList.isDisplayed());
+		softAssert.assertEquals(true, dayBookRLMap.isDisplayed());
+		softAssert.assertEquals(true, dayBookRLMapLists.isDisplayed());
 		
 
 		dayBookUpload.click();
@@ -194,6 +197,7 @@ public class ThinkNumbersSmokeTest extends TestBase{
 		
 		driver.findElement(By.xpath("//a[@href='#/thinknumbers/masters/getting-starteds/getting-started' and text()='Getting Started']")).click();
 	}
+		
 
 	@AfterMethod
 	public void logOutChildWindow() {

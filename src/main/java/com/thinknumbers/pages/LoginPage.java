@@ -4,9 +4,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.thinknumbers.base.TestBase;
+import com.thinknumbers.base.BaseTest;
 
-public class LoginPage extends TestBase{
+public class LoginPage extends BaseTest{
 	
 	//Page Factory - OR:
 	@FindBy(name="clientname")

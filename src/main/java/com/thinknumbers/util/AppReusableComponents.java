@@ -2,10 +2,40 @@ package com.thinknumbers.util;
 
 import org.openqa.selenium.By;
 
-import com.thinknumbers.base.TestBase;
+import com.thinknumbers.base.BaseTest;
 
-public class AppReusableComponents extends TestBase{
+public class AppReusableComponents extends BaseTest{
 	
+	public String entityName;
+	public String year;
+	public String month;
+	
+	/**
+     * <p>
+     * Allows to get the EntityName from test data excel sheet
+     * 
+     */
+	public static String getEntityName() {
+		return TestUtil.getCellData("EntityName", 1);
+	}
+
+	/**
+     * <p>
+     * Allows to get the Year from test data excel sheet
+     * 
+     */
+	public static String getYear() {
+		return TestUtil.getCellData("Year", 1);
+	}
+
+	/**
+     * <p>
+     * Allows to get the Month from test data excel sheet
+     * 
+     */
+	public static String getMonth() {
+		return TestUtil.getCellData("Month", 1);
+	}
 	
     /**
      * <p>

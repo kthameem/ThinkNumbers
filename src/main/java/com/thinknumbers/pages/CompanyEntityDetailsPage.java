@@ -1,13 +1,15 @@
 package com.thinknumbers.pages;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.thinknumbers.base.TestBase;
+import com.thinknumbers.base.BaseTest;
 import com.thinknumbers.util.AppReusableComponents;
+import com.thinknumbers.util.TestUtil;
 
-public class CompanyEntityDetailsPage extends TestBase{
+public class CompanyEntityDetailsPage extends BaseTest{
 	
 	@FindBy(xpath="//h4[text()='Group Company Details']")
 	WebElement pageTitle;
@@ -90,11 +92,6 @@ public class CompanyEntityDetailsPage extends TestBase{
 		return AppReusableComponents.searchTable(entityName);
 	}
 	
-	public CompanyCredentialPage goToCredentialPage() {
-		credentialIcon.click();
-		return new CompanyCredentialPage();
-	}
-	
 	public String readAlertMessage() {
 		return alertMessage.getText();
 	}
@@ -112,12 +109,13 @@ public class CompanyEntityDetailsPage extends TestBase{
 	}
 	
 	public void addEntity(String eName, String aCurrency, String rCurrency, String rTxt) {
-		btAdd.click();
+		TestUtil.javaScriptClickEvent(btAdd);
 		entityName.sendKeys(eName);
 		selectAccCurrency(aCurrency);
 		selectReportCurrency(rCurrency);
 		remarksTxt.sendKeys(rTxt);
 		btSave.click();
+		TestUtil.waitUntilVisible(1000, alertMessage);
 	}
 	
 	public String viewEntity(String eName) {
@@ -129,9 +127,11 @@ public class CompanyEntityDetailsPage extends TestBase{
 	
 	public void editEntity(String eName) {
 		AppReusableComponents.editTable(eName);
+		remarksTxt.sendKeys(Keys.CLEAR);
 		remarksTxt.clear();
 		remarksTxt.sendKeys(eName+"test");
 		btUpdateEntity.click();
+		TestUtil.waitUntilVisible(1000, alertMessage);
 	}
 	
 	public void closeEntity() {

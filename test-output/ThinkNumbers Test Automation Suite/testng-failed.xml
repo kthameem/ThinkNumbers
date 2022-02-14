@@ -5,15 +5,96 @@
     <listener class-name="com.thinknumbers.ExtendReportListener.ExtentReporterNG"/>
     <listener class-name="com.thinknumbers.util.ListenerTest"/>
   </listeners>
-  <test thread-count="5" name="Think Numbers Smoke Test Cases(failed)">
+  <test thread-count="5" name="Think Numbers Test Cases(failed)">
     <classes>
-      <class name="com.thinknumbers.smoketesting.ThinkNumbersSmokeTest">
+      <class name="com.thinknumbers.testcases.FasMastersLedgerListPageTest">
         <methods>
-          <include name="dayBookTest"/>
-          <include name="logOutChildWindow"/>
+          <include name="uploadLedgerNoDataTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.thinknumbers.testcases.FasMastersLedgerListPageTest -->
+      <class name="com.thinknumbers.testcases.UploadsDBUploadPageTest">
+        <methods>
+          <include name="FreezeWithNoDaybookTest"/>
+          <include name="tearDown"/>
+          <include name="uploadDaybookFrozenMonthTest"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.thinknumbers.smoketesting.ThinkNumbersSmokeTest -->
+      </class> <!-- com.thinknumbers.testcases.UploadsDBUploadPageTest -->
+      <class name="com.thinknumbers.testcases.ReportDesignReportSectionPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="updateALReport"/>
+        </methods>
+      </class> <!-- com.thinknumbers.testcases.ReportDesignReportSectionPageTest -->
+      <class name="com.thinknumbers.testcases.DashboardDesignDashboardCreationPageTest">
+        <methods>
+          <include name="duplicateDashboardTest"/>
+          <include name="updateDashboardTest"/>
+          <include name="createDashboardTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.thinknumbers.testcases.DashboardDesignDashboardCreationPageTest -->
+      <class name="com.thinknumbers.testcases.UploadsTBPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="trialBalanceUploadAllowedTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.thinknumbers.testcases.UploadsTBPageTest -->
+      <class name="com.thinknumbers.testcases.FasMastersFasGroupListPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="searchFasGroupTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.thinknumbers.testcases.FasMastersFasGroupListPageTest -->
+      <class name="com.thinknumbers.testcases.RLReportingLedgerListsPageTest">
+        <methods>
+          <include name="duplicateRLTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="addRLTest"/>
+        </methods>
+      </class> <!-- com.thinknumbers.testcases.RLReportingLedgerListsPageTest -->
+      <class name="com.thinknumbers.testcases.FasMastersMapWithLedgerPageTest">
+        <methods>
+          <include name="validateFasGroupRevenueTest"/>
+          <include name="setUp"/>
+          <include name="validateFasGroupAssetTest"/>
+          <include name="validateFasGroupLiabilityTest"/>
+          <include name="validateFasGroupExpenseTest"/>
+          <include name="tearDown"/>
+          <include name="resetLedgerTest"/>
+        </methods>
+      </class> <!-- com.thinknumbers.testcases.FasMastersMapWithLedgerPageTest -->
+      <class name="com.thinknumbers.testcases.DashboardDesignTablesPageTest">
+        <methods>
+          <include name="duplicateTablesTest" invocation-numbers="0"/>
+          <include name="addTablesTest" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="editTablesTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.thinknumbers.testcases.DashboardDesignTablesPageTest -->
+      <class name="com.thinknumbers.testcases.RLReportingLedgersToAccLedgersMappingPageTest">
+        <methods>
+          <include name="mapReportingLedgerExpenseTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.thinknumbers.testcases.RLReportingLedgersToAccLedgersMappingPageTest -->
+      <class name="com.thinknumbers.testcases.OMLedgerTypePageTest">
+        <methods>
+          <include name="searchLedgerTypeTest"/>
+          <include name="duplicateTypeTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.thinknumbers.testcases.OMLedgerTypePageTest -->
     </classes>
-  </test> <!-- Think Numbers Smoke Test Cases(failed) -->
+  </test> <!-- Think Numbers Test Cases(failed) -->
 </suite> <!-- Failed suite [ThinkNumbers Test Automation Suite] -->

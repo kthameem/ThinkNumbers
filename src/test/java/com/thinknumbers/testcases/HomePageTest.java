@@ -5,19 +5,19 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import com.thinknumbers.base.TestBase;
+import com.thinknumbers.base.BaseTest;
 import com.thinknumbers.pages.HomePage;
 import com.thinknumbers.pages.LoginPage;
-import com.thinknumbers.pages.MastersPage;
+import com.thinknumbers.pages.MasterPage;
 import com.thinknumbers.pages.ThinkiamHomePage;
 import com.thinknumbers.util.TestUtil;
 
-public class HomePageTest extends TestBase{
+public class HomePageTest extends BaseTest{
 	
 	LoginPage loginPage;
 	ThinkiamHomePage thinkiamHomePage;
 	HomePage homePage;
-	MastersPage mastersPage;
+	MasterPage masterPage;
 	
 	public HomePageTest() {
 		super();
@@ -25,7 +25,7 @@ public class HomePageTest extends TestBase{
 	
 	
 	@BeforeMethod
-	public void setUp() {
+	public void setUp() throws InterruptedException {
 		initialization();
 		softAssert = new SoftAssert();
 		loginPage = new LoginPage();
@@ -36,7 +36,7 @@ public class HomePageTest extends TestBase{
 		TestUtil.WaitTill_PageLoads(10);
 	}
 	
-	@Test(priority=1)
+	@Test(priority=1, enabled=true)
 	public void verifyHomePageIconsTest() {
 		softAssert.assertEquals(homePage.readAlertMessage(), "Logged In Successfully");
 		homePage.clearAlertMessage();
@@ -44,23 +44,18 @@ public class HomePageTest extends TestBase{
 		softAssert.assertTrue(homePage.verifyDashboardIcon());
 		softAssert.assertTrue(homePage.verifyReportsIcon());
 		softAssert.assertTrue(homePage.verifyMasterIcon());
-		softAssert.assertTrue(homePage.verifyMastersIcon());
 		softAssert.assertTrue(homePage.verifySettingsIcon());
 		softAssert.assertTrue(homePage.verifyLogoutIcon());
-		softAssert.assertTrue(homePage.verifyThemeSettingsButton());
 		softAssert.assertTrue(homePage.verifyRefreshButton());
 		softAssert.assertAll();
 	}
 	
-	@Test(priority=2)
-	public void selectDashboard() {
-		homePage.selectDashboardName("Dashboard 1");
+	@Test(priority=2, enabled=true)
+	public void selectDashboardTest() throws InterruptedException {
+		homePage.selectDashboardName("Dashboard1");
+			Thread.sleep(5000);	
 	}
-	
-	@Test(priority=3)
-	public void goToMastersTest() {
-		mastersPage = homePage.goToMasters();
-	}
+
 	
 	@AfterMethod
 	public void tearDown() {

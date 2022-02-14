@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.thinknumbers.testcases.SubMasterLedgerPageTest">
+      <class name="com.thinknumbers.testcases.ReportDesignReportSectionPageTest">
         <methods>
-          <include name="searchLedgerTest"/>
-          <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="updateALReport"/>
         </methods>
-      </class> <!-- com.thinknumbers.testcases.SubMasterLedgerPageTest -->
+      </class> <!-- com.thinknumbers.testcases.ReportDesignReportSectionPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

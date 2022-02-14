@@ -3,10 +3,10 @@ package com.thinknumbers.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import com.thinknumbers.base.TestBase;
+import com.thinknumbers.base.BaseTest;
 import com.thinknumbers.util.AppReusableComponents;
 
-public class HomePage extends TestBase {
+public class HomePage extends BaseTest{
 	
 	@FindBy(xpath="//img[@title='Dashboard']")
 	WebElement dashboardIcon;
@@ -17,17 +17,11 @@ public class HomePage extends TestBase {
 	@FindBy(xpath="//img[@title='Master']")
 	WebElement masterIcon;
 		
-	@FindBy(xpath="//img[@title='Masters']")
-	WebElement mastersIcon;
-	
 	@FindBy(xpath="//img[@title='Settings']")
 	WebElement settingsIcon;
 	
 	@FindBy(xpath="//img[@title='Logout']")
 	WebElement logoutIcon;
-	
-	@FindBy(xpath="//button[@class='btn shadow bg-white rounded' and @title='SETTINGS']")
-	WebElement themeSettingsButton;
 	
 	@FindBy(xpath="//button[@class='btn shadow bg-white rounded' and @title='REFRESH']")
 	WebElement refreshButton;
@@ -37,6 +31,9 @@ public class HomePage extends TestBase {
 	
 	@FindBy(xpath="//div[@role='alertdialog']")
 	WebElement alertMessage;
+	
+	@FindBy(xpath="//div//mat-dialog-container[@role='dialog']")
+	WebElement loadingIcon;
 	
 	public HomePage() {
 		PageFactory.initElements(driver, this);
@@ -58,20 +55,12 @@ public class HomePage extends TestBase {
 		return masterIcon.isDisplayed();
 	}
 	
-	public boolean verifyMastersIcon() {
-		return mastersIcon.isDisplayed();
-	}
-	
 	public boolean verifySettingsIcon() {
 		return settingsIcon.isDisplayed();
 	}
 	
 	public boolean verifyLogoutIcon() {
 		return logoutIcon.isDisplayed();
-	}
-	
-	public boolean verifyThemeSettingsButton() {
-		return themeSettingsButton.isDisplayed();
 	}
 	
 	public boolean verifyRefreshButton() {
@@ -103,9 +92,13 @@ public class HomePage extends TestBase {
 
 	}
 	
-	public MastersPage goToMasters() {
-		mastersIcon.click();
-		return new MastersPage();
+	public MasterPage goToMaster() {
+		masterIcon.click();
+		return new MasterPage();
+	}
+	
+	public boolean isLoadingIconAvailable() {
+		return loadingIcon.isDisplayed();
 	}
 	
 
